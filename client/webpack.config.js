@@ -34,7 +34,7 @@ module.exports = {
     ],
   },
   output: {
-    path: devPath,
+    path: path.resolve(__dirname, "../server/src/static"),
     filename: "bundle.js",
   },
   plugins: [

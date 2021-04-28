@@ -8,7 +8,7 @@
   "scripts": {
     "postinstall": "cd .. && husky install client/.husky",
     "dev": "webpack-cli serve --mode development",
-    "build": "webpack build",
+    "build": "webpack build --mode production && cp ./src/index.html ../server/src/static",
     "sb": "start-storybook -s ./src/resources -p 6006",
     "build-storybook": "build-storybook -s ./src/resources",
     "chromatic": "chromatic --project-token=1bd076c6119f --exit-zero-on-changes "

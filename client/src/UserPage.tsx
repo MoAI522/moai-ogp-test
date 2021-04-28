@@ -9,14 +9,14 @@ interface IUserPageURLParamaters {
 const UserPage: React.FC = () => {
   const { user_name } = useParams<IUserPageURLParamaters>();
   const location = useLocation();
-  const [userDescription, _] = useState<string>(
+  const [userDescription] = useState<string>(
     "自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介"
   );
 
   return (
     <div>
       <Helmet>
-        <meta property="og:url" content="location.pathname" />
+        <meta property="og:url" content={location.pathname} />
         <meta property="og:title" content="OGP TEST" />
         <meta property="og:description" content={userDescription} />
         <meta property="og:site_name" content="OGP TEST" />
