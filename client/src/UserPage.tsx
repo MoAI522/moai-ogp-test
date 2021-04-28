@@ -20,7 +20,7 @@ const UserPage: React.FC = () => {
         <meta property="og:title" content="OGP TEST" />
         <meta property="og:description" content={userDescription} />
         <meta property="og:site_name" content="OGP TEST" />
-        <meta property="og:image" content="./images/ogp-thumbnail.jpg" />
+        <meta property="og:image" content="/images/ogp-thumbnail.jpg" />
       </Helmet>
       <p>user_name: {user_name}</p>
     </div>
