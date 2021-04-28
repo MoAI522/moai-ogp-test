@@ -1,0 +1,10 @@
+{
+  "name": "ogp-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "MoAI <urotanre522@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd ./server && npm start"
+  }
+}
